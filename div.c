@@ -1,17 +1,18 @@
 #include "monty.h"
+
 /**
- * div_ - divides the second top element of the stack by
- * the top element of stack.
- * @stack: double pointer to stack.
- * @line_number: number of lines.
- *
- * Return: void.
- */
+  * div_ - divides the second top element of the stack by
+  * the top elem of stack.
+  * @stack: double pointer to stack.
+  * @line_number: number of lines.
+  *
+  * Return: void.
+  */
 void div_(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp;
 	int i = 0, j = 0;
-	
+
 	if (*stack == NULL || (*stack)->next == NULL)
 	{
 		free_dlist(*stack);
@@ -34,17 +35,17 @@ void div_(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * mul - multiplies the second top element of the stack with the
- * top element of the stack.
- * @stack: double pointer to stack;
- * @line_number: number of lines.
- *
- * Return: void.
- */
+  * mul - multiplies the second top element of the stack with the
+  * top element of the stack.
+  * @stack: double pointer to stack;
+  * @line_number: number of lines.
+  *
+  * Return: void.
+  */
 void mul(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp;
-	
+
 	if (*stack == NULL || (*stack)->next == NULL)
 	{
 		free_dlist(*stack);
@@ -59,17 +60,17 @@ void mul(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * mod - computes the modulus of the second top element of the stack
- * by the top element of the stack.
- * @stack: double pointer to stack;
- * @line_number: number of lines.
- *
- * Return: void.
- */
+  * mod - computes the modulus of the second top element of the stack
+  * by the top element of the stack.
+  * @stack: double pointer to stack;
+  * @line_number: number of lines.
+  *
+  * Return: void.
+  */
 void mod(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp;
-	
+
 	if (*stack == NULL || (*stack)->next == NULL)
 	{
 		free_dlist(*stack);
